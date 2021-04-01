@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4">
+
+
+    <ImageView
+        android:id="@+id/imageDetails"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/watched"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:drawablePadding="6dp"
+        android:drawableLeft="@drawable/ic_baseline_remove_red_eye_24"
+        android:fontFamily="@font/gilroy_medium"
+        android:hint="@string/_789"
+        android:textColor="@color/dark"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageDetails" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+        android:hint="Джалал абад"
+        android:textColor="#B80F0A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/watched" />
+
+    <ImageView
+        android:id="@+id/imageBack"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="171dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/buton_bg"
+        android:drawableLeft="@drawable/ic_baseline_phone_24"
+        android:paddingStart="32dp"
+        android:paddingEnd="24dp"
+        android:text="Позвонить"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textCity" />
+
+
+    <TextView
+        android:id="@+id/textSale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/open_sans"
+        android:hint="пвпвапвпвавпgdgdfgdfg"
+        android:maxLines="2"
+        android:textColor="@color/dark"
+        app:layout_constraintEnd_toEndOf="@id/btnCall"
+        app:layout_constraintStart_toStartOf="@id/btnCall"
+        app:layout_constraintTop_toBottomOf="@id/btnCall" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/open_sans"
+        android:textColor="@color/dark"
+        app:layout_constraintTop_toBottomOf="@id/textSale" />
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/gothampro_medium"
+        android:text="Дата обновления"
+        android:textColor="@color/dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageDetails" />
+
+    <TextView
+        android:id="@+id/dateNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/gothampro_medium"
+        android:hint="3 мая, 2020"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date" />
+
+
+    <Button
+        android:id="@+id/btnMess"
+        android:layout_width="171dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_message"
+        android:drawableLeft="@drawable/ic_bx_bxs_chat"
+        android:paddingStart="32dp"
+        android:text="Написать"
+        android:paddingEnd="20dp"
+        android:textColor="@color/dark"
+        app:layout_constraintBottom_toBottomOf="@id/btnCall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnCall" />
+
+
+    <TextView
+        android:id="@+id/textPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:textSize="24sp"
+        android:fontFamily="@font/open_sans"
+        android:hint="240 gdg"
+        app:layout_constraintStart_toEndOf="@id/Ot"
+        app:layout_constraintStart_toStartOf="@id/btnMess"
+        android:textColor="@color/dark"
+        app:layout_constraintEnd_toEndOf="@id/btnMess"
+        app:layout_constraintTop_toBottomOf="@id/btnMess" />
+    <TextView
+        android:id="@+id/Ot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="От"
+        android:layout_marginEnd="8dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/textPrice"
+        app:layout_constraintEnd_toStartOf="@id/textPrice"
+        app:layout_constraintTop_toTopOf="@id/textPrice" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

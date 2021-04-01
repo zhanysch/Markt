@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="главная"/>
+    <item
+        android:id="@+id/features"
+        android:icon="@drawable/ic_baseline_star_outline_24"
+        android:title="избранные"/>
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/ic_bi_plus"
+        android:title="добавить"/>
+    <item
+        android:id="@+id/comment"
+        android:icon="@drawable/ic_baseline_mode_comment_sec"
+        android:title="комментарии"/>
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="кабинет"/>
+
+
+
+
+
+</menu>

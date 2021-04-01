@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        tools:layout="@layout/home_layout"
+        android:name="com.baish.internship.ui.bottomnavigation.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        tools:layout="@layout/details_layout"
+        android:name="com.baish.internship.ui.bottomnavigation.details.DetailsFragment"
+        android:label="DetailsFragment" >
+        <argument
+            android:name="details"
+            app:argType="com.baish.internship.ui.bottomnavigation.home.agro.Dataclass"
+            app:nullable="true"
+            android:defaultValue="@null"/>
+    </fragment>
+</navigation>
